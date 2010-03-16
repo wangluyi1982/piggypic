@@ -1,0 +1,1091 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NECTestPattern.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NECTestPattern.ico"
+IDI_ICON_PATTERN7       ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON_PATTERN_CALC1  ICON    DISCARDABLE     "res\\icon_pat_Calc1.ico"
+IDI_ICON_PATTERN_CALC3  ICON    DISCARDABLE     "res\\icon_pat_Calc3.ico"
+IDI_ICON_PATTERN_CALC2  ICON    DISCARDABLE     "res\\icon_pat_Calc2.ico"
+IDI_ICONINFORMATION     ICON    DISCARDABLE     "res\\About.ico"
+IDI_ICON_PATTERN8       ICON    DISCARDABLE     "res\\icon_pat.ico"
+IDI_ICON_PATTERN9       ICON    DISCARDABLE     "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPatternのﾊﾞｰｼﾞｮﾝ情報"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NECTestPattern Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_NECTESTPATTERN_DIALOG DIALOGEX 0, 0, 319, 424
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NEC Test Pattern"
+MENU IDR_MENU_MAIN
+FONT 9, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN1,76,146,22,26
+    EDITTEXT        IDC_EDIT_FILENAME,176,154,122,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BUTTON_FILE,179,178,50,14
+    PUSHBUTTON      "実行",IDC_BUTTON_FILEDISPLAY,179,199,50,14
+    CONTROL         "同一画像表示",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,72,95,57,10
+    CONTROL         "List1",IDC_LIST_DISPLAY,"SysListView32",LVS_SMALLICON | 
+                    LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | WS_BORDER | 
+                    WS_TABSTOP,7,7,305,60,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "各モニター表示",IDC_RADIO_ONE,"Button",
+                    BS_AUTORADIOBUTTON,184,95,61,10
+    CONTROL         130,IDC_STATIC_PREVIEW,"Static",SS_BITMAP,244,189,48,56,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "プレビュー",IDC_STATIC_PREVIEW_GROUP,237,177,60,72
+    GROUPBOX        "テストパターンファイル",IDC_STATIC,167,128,140,255
+    LTEXT           "ファイル名",IDC_STATIC,177,143,31,8
+    GROUPBOX        "同一画像設定",IDC_STATIC,7,115,305,275
+    LTEXT           "モニターを選択してください",IDC_STATIC,7,75,78,8
+    PUSHBUTTON      "退出",IDC_EXITDLG,262,401,50,14
+    CONTROL         "中央",IDC_RADIO_FirstCen,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,186,219,30,10
+    CONTROL         "拡大",IDC_RADIO_FirstExt,"Button",BS_AUTORADIOBUTTON,
+                    186,232,30,10
+    CONTROL         "直接",IDC_RADIO_FirstEnu,"Button",BS_AUTORADIOBUTTON,
+                    186,245,30,10
+    GROUPBOX        "標準画像",IDC_STATIC,67,128,94,255
+    GROUPBOX        "水平方向と垂直方向の配置",IDC_STATIC_Enu,174,260,127,40
+    CONTROL         "左端",IDC_RADIO_Enu_left,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,186,272,30,10
+    CONTROL         "中央",IDC_RADIO_Enu_cen,"Button",BS_AUTORADIOBUTTON,223,
+                    272,30,10
+    CONTROL         "右端",IDC_RADIO_Enu_right,"Button",BS_AUTORADIOBUTTON,
+                    260,272,30,10
+    CONTROL         "上端",IDC_RADIO_Enu_up,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,186,287,30,10
+    CONTROL         "中央",IDC_RADIO_Enu_ccen,"Button",BS_AUTORADIOBUTTON,
+                    223,287,30,10
+    CONTROL         "下端",IDC_RADIO_Enu_down,"Button",BS_AUTORADIOBUTTON,
+                    260,287,30,10
+    GROUPBOX        "拡大優先",IDC_STATIC_Ext,174,260,127,40
+    CONTROL         "幅",IDC_RADIO_Ext_Width,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,223,279,23,10
+    CONTROL         "高さ",IDC_RADIO_Ext_Height,"Button",BS_AUTORADIOBUTTON,
+                    260,279,28,10
+    CONTROL         "穴埋め",IDC_RADIO_Ext_Pack,"Button",BS_AUTORADIOBUTTON,
+                    186,279,37,10
+    GROUPBOX        "補充色",IDC_STATIC_Color,174,304,127,71
+    CONTROL         "左上角",IDC_RADIO_Color_leftup,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,185,340,37,10
+    CONTROL         "左下角",IDC_RADIO_Color_leftdown,"Button",
+                    BS_AUTORADIOBUTTON,185,356,37,10
+    CONTROL         "真ん中",IDC_RADIO_Color_cen,"Button",BS_AUTORADIOBUTTON,
+                    221,348,37,10
+    CONTROL         "右上角",IDC_RADIO_Color_rightup,"Button",
+                    BS_AUTORADIOBUTTON,258,340,31,10
+    CONTROL         "右下角",IDC_RADIO_Color_rightdown,"Button",
+                    BS_AUTORADIOBUTTON,258,356,32,10
+    CONTROL         "すべて",IDC_CHECK_ALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,274,74,30,10
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN2,102,146,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN3,128,146,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC1,25,146,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC2,25,180,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC3,25,214,22,26
+    GROUPBOX        "作成画像",IDC_STATIC,12,128,49,255
+    GROUPBOX        "画像の色",IDC_STATIC_COLOR_FILE,180,329,116,40
+    CONTROL         "編集色",IDC_RADIO_COLOR_SELECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,195,316,37,10
+    CONTROL         "画像色",IDC_RADIO_COLOR_FILE,"Button",
+                    BS_AUTORADIOBUTTON,238,316,37,10
+    CONTROL         "",IDC_STATIC_SELECTED_COLOR,"Static",SS_BLACKRECT,187,
+                    342,53,20,WS_EX_CLIENTEDGE
+    GROUPBOX        "編集の色",IDC_STATIC_COLOR_SELECT,180,329,116,40
+    PUSHBUTTON      "色を編集",IDC_BUTTON_SELECT_COLOR,243,344,50,14
+    GROUPBOX        "",IDC_STATIC,5,86,308,5
+    GROUPBOX        "",IDC_STATIC,5,105,308,5
+    PUSHBUTTON      "識別",IDC_BUTTON_MONITORNUMBER,213,71,50,14
+    PUSHBUTTON      "更新",IDC_BUTTON_MONITOR_UPDATE,156,71,50,14
+    PUSHBUTTON      "画面プロパティ",IDC_DESKPROPERTY,99,71,50,14
+END
+
+IDD_TEST_PATTERN DIALOGEX 0, 0, 66, 68
+STYLE WS_POPUP
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC_PATTERN,"Static",SS_BITMAP,26,26,13,14,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STATIC_BMPBK1,"Static",SS_BITMAP | SS_CENTERIMAGE,
+                    0,0,13,14
+END
+
+IDD_SETTESTPATTERN DIALOGEX 0, 0, 303, 290
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NEC Test Pattern"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN1,67,23,22,26
+    EDITTEXT        IDC_EDIT_FILENAME,164,33,122,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_BUTTON_FILE,168,57,50,14
+    PUSHBUTTON      "実行",IDC_BUTTON_FILEDISPLAY,168,78,50,14
+    CONTROL         130,IDC_STATIC_PREVIEW,"Static",SS_BITMAP,233,68,46,53,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "プレビュー",IDC_STATIC_PREVIEW_GROUP,226,56,60,72
+    GROUPBOX        "テストパターンファイル",IDC_STATIC,157,7,139,255
+    LTEXT           "ファイル名",IDC_STATIC,166,22,31,8
+    PUSHBUTTON      "退出",IDC_EXITDLG,246,269,50,14
+    CONTROL         "中央",IDC_RADIO_FirstCen,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,175,98,30,10
+    CONTROL         "拡大",IDC_RADIO_FirstExt,"Button",BS_AUTORADIOBUTTON,
+                    175,111,30,10
+    CONTROL         "直接",IDC_RADIO_FirstEnu,"Button",BS_AUTORADIOBUTTON,
+                    175,124,30,10
+    GROUPBOX        "標準画像",IDC_STATIC,59,7,94,255
+    GROUPBOX        "水平方向と垂直方向の配置",IDC_STATIC_Enu,163,139,127,40
+    CONTROL         "左端",IDC_RADIO_Enu_left,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,175,151,30,10
+    CONTROL         "中央",IDC_RADIO_Enu_cen,"Button",BS_AUTORADIOBUTTON,212,
+                    151,30,10
+    CONTROL         "右端",IDC_RADIO_Enu_right,"Button",BS_AUTORADIOBUTTON,
+                    248,151,30,10
+    CONTROL         "上端",IDC_RADIO_Enu_up,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,175,166,30,10
+    CONTROL         "中央",IDC_RADIO_Enu_ccen,"Button",BS_AUTORADIOBUTTON,
+                    212,166,30,10
+    CONTROL         "下端",IDC_RADIO_Enu_down,"Button",BS_AUTORADIOBUTTON,
+                    248,166,30,10
+    GROUPBOX        "拡大優先",IDC_STATIC_Ext,163,139,127,40
+    CONTROL         "幅",IDC_RADIO_Ext_Width,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,212,158,23,10
+    CONTROL         "高さ",IDC_RADIO_Ext_Height,"Button",BS_AUTORADIOBUTTON,
+                    248,158,28,10
+    CONTROL         "穴埋め",IDC_RADIO_Ext_Pack,"Button",BS_AUTORADIOBUTTON,
+                    175,158,37,10
+    PUSHBUTTON      "非表示",IDC_DONOT,185,269,50,14
+    PUSHBUTTON      "戻る",IDC_BACK,124,269,50,14
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC1,21,23,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN2,94,23,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN3,122,23,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC2,21,56,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC3,21,89,22,26
+    GROUPBOX        "補充色",IDC_STATIC_Color,163,183,127,71
+    CONTROL         "左上角",IDC_RADIO_Color_leftup,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,174,219,37,10
+    CONTROL         "左下角",IDC_RADIO_Color_leftdown,"Button",
+                    BS_AUTORADIOBUTTON,174,235,37,10
+    CONTROL         "真ん中",IDC_RADIO_Color_cen,"Button",BS_AUTORADIOBUTTON,
+                    210,227,37,10
+    CONTROL         "右上角",IDC_RADIO_Color_rightup,"Button",
+                    BS_AUTORADIOBUTTON,247,219,31,10
+    CONTROL         "右下角",IDC_RADIO_Color_rightdown,"Button",
+                    BS_AUTORADIOBUTTON,247,235,32,10
+    GROUPBOX        "画像の色",IDC_STATIC_COLOR_FILE,169,208,116,40
+    CONTROL         "編集色",IDC_RADIO_COLOR_SELECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,184,195,37,10
+    CONTROL         "画像色",IDC_RADIO_COLOR_FILE,"Button",
+                    BS_AUTORADIOBUTTON,227,195,37,10
+    CONTROL         "",IDC_STATIC_SELECTED_COLOR,"Static",SS_BLACKRECT,176,
+                    221,53,20,WS_EX_CLIENTEDGE
+    GROUPBOX        "編集の色",IDC_STATIC_COLOR_SELECT,169,208,116,40
+    PUSHBUTTON      "色を編集",IDC_BUTTON_SELECT_COLOR,232,223,50,14
+    GROUPBOX        "作成画像",IDC_STATIC,7,7,49,255
+END
+
+IDD_SETTING_MSG_DIALOG DIALOGEX 0, 0, 159, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_RIGHT
+CAPTION "NEC TEST PATTERN"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_TEXT,7,7,145,44,0,WS_EX_TRANSPARENT
+END
+
+IDD_SETTING_REMIND_DIALOG DIALOGEX 0, 0, 159, 60
+STYLE WS_POPUP
+EXSTYLE WS_EX_RIGHT
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         136,IDC_STATIC_REMIND1,"Static",SS_BITMAP,10,11,1,1
+    CONTROL         IDI_ICON_PATTERN_CALC2,IDC_STATIC_REMIND2,"Static",
+                    SS_BITMAP,42,25,20,20
+    CTEXT           "str",IDC_STATIC_STR,19,31,8,8,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_TRANSPARENT
+END
+
+IDD_REMIND_DIALOG DIALOG DISCARDABLE  0, 0, 91, 40
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 9, "MS Shell Dlg"
+BEGIN
+    CONTROL         "こんなメッセージを表示しないようになります。",
+                    IDC_CHECK_SHOW,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,12,0,65,40
+END
+
+IDD_CALC_DIALOG DIALOG DISCARDABLE  0, 0, 95, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,31,35,9,21
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,31,65,9,21
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,31,95,9,21
+    ICON            IDI_ICON_PATTERN_CALC1,IDC_STATIC,45,35,18,21
+    ICON            IDI_ICON_PATTERN_CALC2,IDC_STATIC,45,65,18,21
+    ICON            IDI_ICON_PATTERN_CALC3,IDC_STATIC,45,95,18,21
+    PUSHBUTTON      "OK",IDOK,22,131,50,14
+    LTEXT           "選択してください。",IDC_STATIC,7,12,48,8
+END
+
+IDD_MESSAGE_DIALOG DIALOG DISCARDABLE  0, 0, 219, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,85,71,50,15
+    PUSHBUTTON      "はい(&Y)",IDYES,52,71,50,15
+    PUSHBUTTON      "いいえ(&N)",IDNO,118,71,50,15
+    ICON            IDI_ICONINFORMATION,IDC_STATIC_ICON,10,10,20,21
+    LTEXT           "Static",IDC_STATIC_STRING,37,18,173,25
+    CONTROL         "こんなメッセージを表示しないようになります。",
+                    IDC_CHECK_SHOW,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,45,53,129,11
+    GROUPBOX        "",IDC_STATIC,10,41,199,5
+END
+
+IDD_TESTTINGMESSAGE_DIALOG DIALOGEX 0, 0, 259, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "次へ",IDC_BUTTON_NEXT,104,113,50,14
+    PUSHBUTTON      "戻る",IDC_BUTTON_BACK,44,113,50,14
+    PUSHBUTTON      "終了",IDOK,164,113,50,14
+    ICON            IDI_ICONINFORMATION,IDC_STATIC_ICON,14,24,20,21
+    LTEXT           "Static",IDC_STATIC_STRING,40,12,208,49,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "自動",IDC_RADIO_A,"Button",BS_AUTORADIOBUTTON,114,89,30,
+                    10
+    CONTROL         "手動",IDC_RADIO_M,"Button",BS_AUTORADIOBUTTON,66,89,30,
+                    10
+    EDITTEXT        IDC_EDIT_TIME,150,87,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    GROUPBOX        "状態移動",IDC_STATIC,52,77,153,29
+    LTEXT           "秒",IDC_STATIC_TIME,182,89,8,8
+    GROUPBOX        "",IDC_STATIC,9,68,241,5
+END
+
+IDD_SOFT_OPTION DIALOGEX 0, 0, 199, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,74,147,50,15
+    ICON            IDI_ICONINFORMATION,IDC_STATIC_ICON,17,59,20,20
+    CONTROL         "起動時に、先回の使用状態に戻ります。",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,55,15,125,18
+    CONTROL         "テスト画面戻るボタンを説明しません。",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,55,36,125,18
+    CONTROL         "作成画像の場合は、ディスプレイ調節説明文字を表示します。",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,55,59,125,18
+    CONTROL         "作成画像以外の場合は、ディスプレイ調節説明文字を表示します。",
+                    IDC_CHECK4,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,55,86,125,18
+    GROUPBOX        "",IDC_STATIC,10,135,178,5
+    EDITTEXT        IDC_EDIT_TIME,125,114,40,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "モニター識別待ち時間",IDC_STATIC,58,117,61,8
+    LTEXT           "秒",IDC_STATIC,171,117,8,8
+    GROUPBOX        "",IDC_STATIC,41,7,1,131
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NECTestPattern MFC ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NECTestPattern\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NECTestPattern.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NECTestPattern ｱﾌﾟﾘｹｰｼｮﾝ\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NECTESTPATTERN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 415
+    END
+
+    IDD_TEST_PATTERN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 59
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_SETTESTPATTERN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_SETTING_MSG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_SETTING_REMIND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_MESSAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 209
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 86
+        HORZGUIDE, 40
+        HORZGUIDE, 57
+        HORZGUIDE, 71
+    END
+
+    IDD_TESTTINGMESSAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 249
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 127
+        HORZGUIDE, 40
+        HORZGUIDE, 53
+        HORZGUIDE, 64
+    END
+
+    IDD_SOFT_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 189
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 162
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PREVIEW      BITMAP  DISCARDABLE     "res\\bitmap_p.bmp"
+IDB_BITMAP_PATTERN7     BITMAP  DISCARDABLE     "res\\7.bmp"
+IDB_BITMAP_REMIND1      BITMAP  DISCARDABLE     "res\\bitmap_remind1.bmp"
+IDB_BITMAP_REMIND2      BITMAP  DISCARDABLE     "res\\bitmap_remind2.bmp"
+IDB_BITMAP_PATTERN8     BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP_PATTERN9     BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                    ID_MENUITEM_EXIT
+    END
+    POPUP "ツール(&T)"
+    BEGIN
+        POPUP "言語(&L)"
+        BEGIN
+            MENUITEM "English(&E)",                 ID_MENUITEM_LANGUAGE_EN
+            MENUITEM "日本語(&J)",                  ID_MENUITEM_LANGUAGE_JP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "オプション(&O)",              ID_MENUITEM_OPTION
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "ﾊﾞｰｼﾞｮﾝ情報(&A)...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "NECTestPattern のﾊﾞｰｼﾞｮﾝ情報(&A)..."
+    IDS_ERR_PATTERNFILE     "このファイルには画像がありません。\n或いは この画像に対応できません。"
+    IDS_ERR_SELECTMONITOR   "モニターを選択してください。"
+    IDS_SETTESTPATTERN_TI   "NEC　Test　Pattern-Display%d ( %d/%d )"
+    IDS_WAR_SELECTMONITOR_ONE "一台以上のモニターを選択してください。"
+    IDS_WAR_SELECTMONITOR_ALL "今、すべて表示選択している状態です。"
+    IDS_MSG_EXIT            "EscまたはEnterボタンを押して、テストパターンが終了されます。"
+    IDS_MSG_SETEND          "現在の設定で表示してよろしいですか？"
+    IDS_MSG_SETTING         "モニター番号：\t%d\n\nモニター名前：\t%s\n\n解像度：\t%d * %d"
+    IDS_MSG_SETTING_TI      "\t設定しているモニター"
+    IDS_MSG_TESTTING1       "これから、液晶ディスプレイの画面調節を行ないます。\n操作は、液晶ディスプレイ前面にあるOSDボタンを使用します。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "ﾌﾟﾛｸﾞﾗﾑの情報、ﾊﾞｰｼﾞｮﾝそして著作権を表示\nﾊﾞｰｼﾞｮﾝ情報"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WAR_CALC1           "この画像は横のモニターに対応します。\nもし、縦のモニターがあれば、縦画像表示が要りますか？"
+    IDS_WAR_CALC2           "この画像は縦のモニターに対応します。\nもし、横のモニターがあれば、横画像表示が要りますか？"
+    IDS_WAR_CALC3           "この画像は縦のモニターに対応します。\nもし、横のモニターがあれば、横画像表示が要りますか？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_EXIT        "ｱﾌﾟﾘｹｰｼｮﾝを終了し、ﾌｧｲﾙの保存を指示\n終了"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_TESTTING2       "\nコントラストの「AUTO」を選択し自動調節を実行してください。"
+    IDS_MSG_TESTTING3       "\n「AUTO」を選択し、位置、サイズの自動調節を実行してください。"
+    IDS_MSG_TESTTING4       "「水平サイズ」(H.SIZE)を選択してください。\n\nボタンを操作して、太い帯状のムラがなくなるようにしてください。"
+    IDS_MSG_TESTTING5       "「位相」(FINE)を選択してください。\nボタンを操作して、画面が一番明るくなる(横線ノイズが少ない)ようにしてください。"
+    IDS_MSG_TESTTING6       "「左/右」または「下／上」を選択してください。\n\nボタンを操作して画面に四角枠が納まるようにしてください。"
+    IDS_MSG_TESTTING7       "これで調節が終了しました。\n\n『EXIT』キーを押してOSDを抜けて下さい。"
+    IDS_MSG_TI_TESTING1     "液晶ディスプレイ調節"
+    IDS_MSG_TI_TESTING2     "コントラスト調節"
+    IDS_MSG_TI_TESTING3     "位置、サイズ調節"
+    IDS_MSG_TI_TESTING4     "表示品位確認"
+    IDS_MSG_TI_TESTING5     "表示品位確認"
+    IDS_MSG_TI_TESTING6     "画面位置確認"
+    IDS_MSG_TI_TESTING7     "終了"
+    IDS_MSG_TI_TESTING_TIME "-残り時間：%d秒"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NEC Test Pattern"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NECTestPattern"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NECTestPattern Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CALC_DIALOG DIALOG DISCARDABLE  0, 0, 95, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,31,35,9,21
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,31,65,9,21
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,31,95,9,21
+    ICON            IDI_ICON_PATTERN_CALC1,IDC_STATIC,45,35,20,20
+    ICON            IDI_ICON_PATTERN_CALC2,IDC_STATIC,45,65,20,20
+    ICON            IDI_ICON_PATTERN_CALC3,IDC_STATIC,45,95,20,20
+    PUSHBUTTON      "OK",IDOK,22,131,50,14
+    LTEXT           "Please select",IDC_STATIC,7,12,48,8
+END
+
+IDD_MESSAGE_DIALOG DIALOG DISCARDABLE  0, 0, 219, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,85,71,50,15
+    PUSHBUTTON      "&Yes",IDYES,52,71,50,15
+    PUSHBUTTON      "&No",IDNO,118,71,50,15
+    ICON            IDI_ICONINFORMATION,IDC_STATIC_ICON,10,10,20,20
+    LTEXT           "Static",IDC_STATIC_STRING,37,18,173,25
+    CONTROL         "Do not display this message next time.",IDC_CHECK_SHOW,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,45,
+                    53,129,11
+    GROUPBOX        "",IDC_STATIC,10,41,199,5
+END
+
+IDD_REMIND_DIALOG DIALOG DISCARDABLE  0, 0, 91, 40
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 9, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Do not display this message next time",IDC_CHECK_SHOW,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,
+                    0,65,40
+END
+
+IDD_SETTESTPATTERN DIALOGEX 0, 0, 323, 290
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NEC Test Pattern"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN1,67,23,22,26
+    PUSHBUTTON      "Exit",IDC_EXITDLG,266,269,50,14
+    GROUPBOX        "Standard Pattern",IDC_STATIC,59,7,94,255
+    PUSHBUTTON      "Do not display",IDC_DONOT,205,269,50,14
+    PUSHBUTTON      "Back",IDC_BACK,144,269,50,14
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC1,21,23,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN2,94,23,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN3,122,23,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC2,21,56,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC3,21,89,22,26
+    GROUPBOX        "Make Pattern",IDC_STATIC,7,7,49,255
+    GROUPBOX        "Test Pattern File",IDC_STATIC,158,7,158,255
+    GROUPBOX        "Chooses the position",IDC_STATIC_Enu,165,139,144,40
+    CONTROL         "Left",IDC_RADIO_Enu_left,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,176,151,27,10
+    CONTROL         "Center",IDC_RADIO_Enu_cen,"Button",BS_AUTORADIOBUTTON,
+                    217,151,35,10
+    CONTROL         "Right",IDC_RADIO_Enu_right,"Button",BS_AUTORADIOBUTTON,
+                    265,151,31,10
+    CONTROL         "Up",IDC_RADIO_Enu_up,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,176,166,24,10
+    CONTROL         "Center",IDC_RADIO_Enu_ccen,"Button",BS_AUTORADIOBUTTON,
+                    217,166,35,10
+    CONTROL         "Down",IDC_RADIO_Enu_down,"Button",BS_AUTORADIOBUTTON,
+                    265,166,32,10
+    GROUPBOX        "Stretch First",IDC_STATIC_Ext,165,139,144,40
+    CONTROL         "Width",IDC_RADIO_Ext_Width,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,217,158,32,10
+    CONTROL         "Height",IDC_RADIO_Ext_Height,"Button",
+                    BS_AUTORADIOBUTTON,265,158,28,10
+    CONTROL         "Full",IDC_RADIO_Ext_Pack,"Button",BS_AUTORADIOBUTTON,
+                    176,158,37,10
+    GROUPBOX        "Packing color",IDC_STATIC_Color,165,183,144,71
+    CONTROL         "Upper left",IDC_RADIO_Color_leftup,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,176,219,50,10
+    CONTROL         "Left under",IDC_RADIO_Color_leftdown,"Button",
+                    BS_AUTORADIOBUTTON,176,235,50,10
+    CONTROL         "Center",IDC_RADIO_Color_cen,"Button",BS_AUTORADIOBUTTON,
+                    217,227,50,10
+    CONTROL         "Upper right",IDC_RADIO_Color_rightup,"Button",
+                    BS_AUTORADIOBUTTON,252,219,50,10
+    CONTROL         "Right under",IDC_RADIO_Color_rightdown,"Button",
+                    BS_AUTORADIOBUTTON,251,235,50,10
+    GROUPBOX        "In file color",IDC_STATIC_COLOR_FILE,171,208,133,40
+    CONTROL         "Edit",IDC_RADIO_COLOR_SELECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,185,195,27,10
+    CONTROL         "In file color",IDC_RADIO_COLOR_FILE,"Button",
+                    BS_AUTORADIOBUTTON,245,195,49,10
+    CONTROL         "",IDC_STATIC_SELECTED_COLOR,"Static",SS_BLACKRECT,180,
+                    221,53,20,WS_EX_CLIENTEDGE
+    GROUPBOX        "Color edit",IDC_STATIC_COLOR_SELECT,171,208,133,40
+    PUSHBUTTON      "Edit",IDC_BUTTON_SELECT_COLOR,245,223,50,14
+    EDITTEXT        IDC_EDIT_FILENAME,167,31,140,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Find",IDC_BUTTON_FILE,173,55,50,14
+    PUSHBUTTON      "Display",IDC_BUTTON_FILEDISPLAY,173,76,50,14
+    CONTROL         130,IDC_STATIC_PREVIEW,"Static",SS_BITMAP,249,65,48,56,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "Preview",IDC_STATIC_PREVIEW_GROUP,241,54,60,72
+    LTEXT           "File name",IDC_STATIC,167,20,31,8
+    CONTROL         "Center",IDC_RADIO_FirstCen,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,180,96,35,10
+    CONTROL         "Stretch",IDC_RADIO_FirstExt,"Button",BS_AUTORADIOBUTTON,
+                    180,109,37,10
+    CONTROL         "Directly",IDC_RADIO_FirstEnu,"Button",
+                    BS_AUTORADIOBUTTON,180,122,39,10
+END
+
+IDD_SETTING_MSG_DIALOG DIALOGEX 0, 0, 159, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_RIGHT
+CAPTION "NEC TEST PATTERN"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_TEXT,7,7,145,44,0,WS_EX_TRANSPARENT
+END
+
+IDD_SOFT_OPTION DIALOGEX 0, 0, 199, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,74,145,50,15
+    ICON            IDI_ICONINFORMATION,IDC_STATIC_ICON,18,54,20,20
+    CONTROL         "When start, restores the inferior user the use establishment.",
+                    IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,55,15,125,18
+    CONTROL         "Do not display message of exit button",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,55,36,125,18
+    CONTROL         "The display adjustment explanation character is displayed for the making image. ",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,55,59,125,25
+    CONTROL         "The display adjustment explanation character is displayed, except for the making image. ",
+                    IDC_CHECK4,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,55,88,125,23
+    GROUPBOX        "",IDC_STATIC,10,134,178,5
+    EDITTEXT        IDC_EDIT_TIME,113,117,40,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Time of Identify",IDC_STATIC,58,120,47,8,0,WS_EX_RIGHT
+    LTEXT           "seconds",IDC_STATIC,158,120,25,8
+    GROUPBOX        "",IDC_STATIC,41,6,1,131
+END
+
+IDD_TESTTINGMESSAGE_DIALOG DIALOGEX 0, 0, 259, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "NECTestPattern"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next",IDC_BUTTON_NEXT,104,113,50,14
+    PUSHBUTTON      "Back",IDC_BUTTON_BACK,44,113,50,14
+    PUSHBUTTON      "Exit",IDOK,164,113,50,14
+    ICON            IDI_ICONINFORMATION,IDC_STATIC_ICON,14,24,20,20
+    LTEXT           "Static",IDC_STATIC_STRING,40,12,208,49,0,
+                    WS_EX_STATICEDGE
+    CONTROL         "AUTO",IDC_RADIO_A,"Button",BS_AUTORADIOBUTTON,114,89,30,
+                    10
+    CONTROL         "Manual",IDC_RADIO_M,"Button",BS_AUTORADIOBUTTON,66,89,
+                    30,10
+    EDITTEXT        IDC_EDIT_TIME,150,87,28,14,ES_RIGHT | ES_AUTOHSCROLL
+    GROUPBOX        "Message",IDC_STATIC,50,77,158,29
+    LTEXT           "seconds",IDC_STATIC_TIME,182,89,25,8
+    GROUPBOX        "",IDC_STATIC,9,68,241,5
+END
+
+IDD_NECTESTPATTERN_DIALOG DIALOGEX 0, 0, 338, 424
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NEC Test Pattern"
+MENU IDR_MENU_MAIN
+FONT 9, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN1,76,146,22,26
+    EDITTEXT        IDC_EDIT_FILENAME,177,154,140,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Find",IDC_BUTTON_FILE,183,178,50,14
+    PUSHBUTTON      "Display",IDC_BUTTON_FILEDISPLAY,183,199,50,14
+    CONTROL         "Same Pattern",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,80,95,57,10
+    CONTROL         "List1",IDC_LIST_DISPLAY,"SysListView32",LVS_SMALLICON | 
+                    LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | WS_BORDER | 
+                    WS_TABSTOP,6,7,324,60,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CONTROL         "Different Pattern",IDC_RADIO_ONE,"Button",
+                    BS_AUTORADIOBUTTON,192,95,65,10
+    CONTROL         130,IDC_STATIC_PREVIEW,"Static",SS_BITMAP,259,188,48,56,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "Preview",IDC_STATIC_PREVIEW_GROUP,252,177,60,72
+    GROUPBOX        "Test Pattern File",IDC_STATIC,167,128,158,255
+    LTEXT           "File name",IDC_STATIC,177,143,31,8
+    GROUPBOX        "Same Pattern Option",IDC_STATIC,7,115,323,275
+    LTEXT           "Please select display(s) above.",IDC_STATIC,7,74,95,8
+    PUSHBUTTON      "Exit",IDC_EXITDLG,262,401,50,14
+    CONTROL         "Center",IDC_RADIO_FirstCen,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,190,219,35,10
+    CONTROL         "Stretch",IDC_RADIO_FirstExt,"Button",BS_AUTORADIOBUTTON,
+                    190,232,37,10
+    CONTROL         "Directly",IDC_RADIO_FirstEnu,"Button",
+                    BS_AUTORADIOBUTTON,190,245,39,10
+    GROUPBOX        "Standard Pattern",IDC_STATIC,67,128,94,255
+    GROUPBOX        "Chooses the position",IDC_STATIC_Enu,174,260,144,40
+    CONTROL         "Left",IDC_RADIO_Enu_left,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,185,272,27,10
+    CONTROL         "Center",IDC_RADIO_Enu_cen,"Button",BS_AUTORADIOBUTTON,
+                    227,272,35,10
+    CONTROL         "Right",IDC_RADIO_Enu_right,"Button",BS_AUTORADIOBUTTON,
+                    274,272,31,10
+    CONTROL         "Up",IDC_RADIO_Enu_up,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,185,287,24,10
+    CONTROL         "Center",IDC_RADIO_Enu_ccen,"Button",BS_AUTORADIOBUTTON,
+                    227,287,35,10
+    CONTROL         "Down",IDC_RADIO_Enu_down,"Button",BS_AUTORADIOBUTTON,
+                    274,287,32,10
+    GROUPBOX        "Stretch First",IDC_STATIC_Ext,174,260,144,40
+    CONTROL         "Width",IDC_RADIO_Ext_Width,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,227,279,32,10
+    CONTROL         "Height",IDC_RADIO_Ext_Height,"Button",
+                    BS_AUTORADIOBUTTON,274,279,32,10
+    CONTROL         "Full",IDC_RADIO_Ext_Pack,"Button",BS_AUTORADIOBUTTON,
+                    185,279,37,10
+    GROUPBOX        "Packing color",IDC_STATIC_Color,174,304,144,71
+    CONTROL         "Upper left",IDC_RADIO_Color_leftup,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,185,340,50,10
+    CONTROL         "Left under",IDC_RADIO_Color_leftdown,"Button",
+                    BS_AUTORADIOBUTTON,185,356,50,10
+    CONTROL         "Center",IDC_RADIO_Color_cen,"Button",BS_AUTORADIOBUTTON,
+                    227,348,50,10
+    CONTROL         "Upper right",IDC_RADIO_Color_rightup,"Button",
+                    BS_AUTORADIOBUTTON,261,340,50,10
+    CONTROL         "Right under",IDC_RADIO_Color_rightdown,"Button",
+                    BS_AUTORADIOBUTTON,260,356,50,10
+    CONTROL         "ALL",IDC_CHECK_ALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,300,73,30,10
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN2,102,146,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN3,128,146,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC1,25,146,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC2,25,180,22,26
+    PUSHBUTTON      "",IDC_BUTTON_PATTERN_CALC3,25,214,22,26
+    GROUPBOX        "Make Pattern",IDC_STATIC,12,128,49,255
+    GROUPBOX        "In file color",IDC_STATIC_COLOR_FILE,180,329,133,40
+    CONTROL         "Edit",IDC_RADIO_COLOR_SELECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,195,316,27,10
+    CONTROL         "In file color",IDC_RADIO_COLOR_FILE,"Button",
+                    BS_AUTORADIOBUTTON,254,316,49,10
+    CONTROL         "",IDC_STATIC_SELECTED_COLOR,"Static",SS_BLACKRECT,189,
+                    342,53,20,WS_EX_CLIENTEDGE
+    GROUPBOX        "Color edit",IDC_STATIC_COLOR_SELECT,180,329,133,40
+    PUSHBUTTON      "Edit",IDC_BUTTON_SELECT_COLOR,255,344,50,14
+    GROUPBOX        "",IDC_STATIC,6,84,324,5
+    GROUPBOX        "",IDC_STATIC,6,105,324,5
+    PUSHBUTTON      "Identify",IDC_BUTTON_MONITORNUMBER,236,71,50,14
+    PUSHBUTTON      "Renovates",IDC_BUTTON_MONITOR_UPDATE,177,71,50,14
+    PUSHBUTTON      "Desk property",IDC_DESKPROPERTY,118,71,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NECTestPattern MFC ?????????\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NECTestPattern\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NECTestPattern.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NECTestPattern ?????????\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETTESTPATTERN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_SOFT_OPTION, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_NECTESTPATTERN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 330
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PREVIEW      BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_MENUITEM_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "&Language"
+        BEGIN
+            MENUITEM "&English",                    ID_MENUITEM_LANGUAGE_EN
+            MENUITEM "&Japanese",                   ID_MENUITEM_LANGUAGE_JP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Option",                     ID_MENUITEM_OPTION
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About NECTestPattern ..."
+    IDS_ERR_PATTERNFILE     "There is no image in this file. \nOr, it is not possible to correspond to this image. "
+    IDS_ERR_SELECTMONITOR   "Please select display(s) above."
+    IDS_SETTESTPATTERN_TI   "NEC Test Pattern-Display%d ( %d/%d )"
+    IDS_WAR_SELECTMONITOR_ONE "Please select more monitor. "
+    IDS_WAR_SELECTMONITOR_ALL "All monitor selections are done now. "
+    IDS_MSG_EXIT            "The test pattern is ended pushing Esc or the Enter button. "
+    IDS_MSG_SETEND          "May I display it by a present setting?"
+    IDS_MSG_SETTING         "Monitor No:\t%d\n\nMonitor Name:\t%s\n\nDisplay Resolution:\t%d * %d"
+    IDS_MSG_SETTING_TI      "\tSetting monitor"
+    IDS_MSG_TESTTING1       " Adjustment can be operated by OSM buttons on the front bezel of LCD monitor."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WAR_CALC1           "This image deals with the monitor of side.\nIf length is monitored, is the length image display needed?"
+    IDS_WAR_CALC2           "This image deals length the monitor of side.\nIf with is monitored, is the length image display needed?"
+    IDS_WAR_CALC3           "This image deals length the monitor of side.\nIf with is monitored, is the length image display needed?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_TESTTING2       "Select the ""CONTRAST AUTO"" control.\nProceed the AUTO adjustment.(CONTRAST)"
+    IDS_MSG_TESTTING3       "Select the ""AUTO ADJUST"" control.\nProceed the AUTO adjustment.\n(SCREEN SIZE and POSITION)"
+    IDS_MSG_TESTTING4       "Select the ""H.SIZE"" control.\nUse this control to eliminate ""pairing"" or uneven line density from the screen by operating the buttons."
+    IDS_MSG_TESTTING5       "Select the ""FINE""control.\nUse this control to adjust for the brightest\nscreen by operating the buttons."
+    IDS_MSG_TESTTING6       "Select the ""H.POSITION""(LEFT/RIGHT) or ""V.POSITION""(DOWN/UP) control.\nUse this control to adjust the Horizontal or vertical Position of the screen by operating the buttons."
+    IDS_MSG_TESTTING7       "All adjustment are finished\n\nPush the ""EXIT"" button twice to turn off the OSM MENU."
+    IDS_MSG_TI_TESTING1     "Adjustment for LCD Monitor"
+    IDS_MSG_TI_TESTING2     "CONTRAST Adjustment"
+    IDS_MSG_TI_TESTING3     "SCREEN SIZE and POSITION Adjustment"
+    IDS_MSG_TI_TESTING4     "Fine Adjustment of SCREEN SIZE and PHASE"
+    IDS_MSG_TI_TESTING5     "Fine Adjustment of SCREEN SIZE and PHASE"
+    IDS_MSG_TI_TESTING6     "SCREEN POSITION Adjustment"
+    IDS_MSG_TI_TESTING7     "End of Adjustment"
+    IDS_MSG_TI_TESTING_TIME "-Rest of time:%dseconds"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NEC Test Pattern"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_EXIT        "Quit the application; prompts to save documents\nExit"
+END
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\NECTestPattern.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
